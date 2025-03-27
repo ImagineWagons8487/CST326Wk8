@@ -6,6 +6,7 @@ public class GameInput : MonoBehaviour
 {
 
     public event EventHandler OnInteractAction;
+    public event EventHandler OnInteractAltAction;
     
     
     private PlayerInputActions playerInputActions;
@@ -15,6 +16,12 @@ public class GameInput : MonoBehaviour
         playerInputActions.Player.Enable();
         
         playerInputActions.Player.Interact.performed += InteractPerformed;
+        playerInputActions.Player.InteractAlt.performed += InteractAlt_performed;
+    }
+
+    private void InteractAlt_performed(InputAction.CallbackContext obj)
+    {
+        OnInteractAltAction?.Invoke(this,EventArgs.Empty);
     }
 
     private void InteractPerformed(InputAction.CallbackContext obj)
