@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ff1042ac6ea112f4fb94b1d32d3c936a, type: 3}
   m_Name: MeatPattyUncookedToMeatPattyCooked
   m_EditorClassIdentifier: 
-  input: {fileID: 0}
-  output: {fileID: 0}
-  fryingTimerMax: 0
+  input: {fileID: 11400000, guid: 0e5d0de0e5fde8f469b08eb1bc1651b7, type: 2}
+  output: {fileID: 11400000, guid: 42ec1ec738398fc408b6fc888bcb6430, type: 2}
+  fryingTimerMax: 3
